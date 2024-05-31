@@ -27,7 +27,7 @@ const peopleResolver: IResolvers = {
                 peopleDataSource[personIndex] = updatedPerson;
                 return updatedPerson;
             }
-            throw new Error("Persona no Encontrada");
+            throw new Error("Person not found");
         },
         deletePerson: (parent, { id }) => {
             const personIndex = peopleDataSource.findIndex(person => person.id === id);
@@ -35,7 +35,7 @@ const peopleResolver: IResolvers = {
                 peopleDataSource.splice(personIndex, 1);
                 return true;
             }
-            throw new Error("Persona Encontrada");
+            throw new Error("Person not found");
         }
     }
 }
