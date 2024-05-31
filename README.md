@@ -1,1 +1,1 @@
-# gql_basic
+# This is a basic Graphql project in node.js
