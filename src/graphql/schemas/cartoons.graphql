@@ -1,5 +1,5 @@
 type Query{
-    Hola(name: String): String!,
+    hello: String!,
     getCartoons: [Cartoon]
 }
 
